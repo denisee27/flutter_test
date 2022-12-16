@@ -54,7 +54,7 @@ void main() {
 }
 
 class LoginTest extends StatefulWidget {
-  // const LoginTest({Key? key}) : super(key: key);
+  const LoginTest({Key? key}) : super(key: key);
 
   @override
   State<LoginTest> createState() {
@@ -65,7 +65,7 @@ class LoginTest extends StatefulWidget {
 class _LoginTestState extends State<LoginTest> {
   final TextEditingController emailController = TextEditingController();
   final TextEditingController passwordController = TextEditingController();
-  // Future<UserModel>? futureEmail;
+  Future<UserModel>? futureEmail;
 
   @override
   Widget build(BuildContext context) {

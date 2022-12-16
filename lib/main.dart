@@ -1,6 +1,8 @@
+import 'package:cobain/pages/getdata.dart';
 import 'package:cobain/pages/homepage.dart';
 import 'package:cobain/pages/loginpage.dart';
-import 'package:cobain/pages/logintest.dart';
+import 'package:cobain/pages/post.dart';
+// import 'package:cobain/pages/logintest.dart';
 import 'package:cobain/pages/splash.dart';
 import 'package:cobain/providers/auth_provider.dart';
 import 'package:flutter/material.dart';
@@ -18,7 +20,7 @@ class MyApp extends StatelessWidget {
     return MultiProvider(
       providers: [
         ChangeNotifierProvider(
-          create: (create) => AuthProvider(),
+          create: (context) => AuthProvider(),
         )
       ],
       child: MaterialApp(
@@ -26,7 +28,8 @@ class MyApp extends StatelessWidget {
         routes: {
           '/': (context) => SplashPage(),
           '/home': (context) => HomePage(),
-          '/login': (context) => LoginTest(),
+          '/login': (context) => LoginPage(),
+          '/post': (context) => PostPage(),
         },
       ),
     );

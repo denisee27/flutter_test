@@ -1,13 +1,13 @@
 class UserModel {
   final int id;
   final String email;
-  final String first_name;
+  final String firstName;
   final String token;
 
   const UserModel({
     required this.id,
     required this.email,
-    required this.first_name,
+    required this.firstName,
     required this.token,
   });
 
@@ -15,7 +15,7 @@ class UserModel {
     return UserModel(
       id: json['id'],
       email: json['email'],
-      first_name: json['first_name'],
+      firstName: json['firstName'],
       token: json['token'],
     );
   }
@@ -24,7 +24,7 @@ class UserModel {
   //   return {
   //     'id': id,
   //     'email': email,
-  //     'first_name': first_name,
+  //     'firstName': firstName,
   //     'token': token,
   //   };
   // }
